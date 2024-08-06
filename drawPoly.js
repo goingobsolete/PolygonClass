@@ -1,11 +1,13 @@
 class Polygon {
-    constructor(centerX, centerY, radius, numSides) {
+    constructor(centerX, centerY, radius, numSides, fillColor) {
         this.centerX = centerX;
         this.centerY = centerY;
         this.radius = radius;
         this.numSides = numSides;
-        this.vertices() = this.calcVertices();
+        this.fillColor = fillColor;
+        this.vertices = this.calcVertices();
     }
+
     calcVertices() {
         let vertices = [];
         let angleStep = TAU / this.numSides;
@@ -19,6 +21,8 @@ class Polygon {
     return vertices;
     }
     draw() {
+        fill(this.fillColor);
+        noStroke();
         beginShape();
         this.vertices.forEach(tempVertex =>{
             vertex(tempVertex.x,tempVertex.y);
@@ -27,3 +31,4 @@ class Polygon {
     }
 
 }
+
