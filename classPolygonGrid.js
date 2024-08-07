@@ -4,7 +4,7 @@ class PolygonGrid {
         this.cols = cols;
         this.radius = radius;
         this.numSides = numSides;
-        this.polygons = polygons [];
+        this.polygons = [];
         // since the draw function happens after the polygon class you don't put this array in calccenters
         this.centers = this.calcCenters();
     }
