@@ -17,9 +17,9 @@ class PolygonGrid {
             for(let j = 0; j < this.cols; j++) {
                 let x = i * spacing + this.radius;
                 let y = j * spacing + this.radius;
-                let fillColor = color(0);
+                let fillColor = color(255);
                 
-                this.polygons.push(x, y, this.radius, this.numSides, fillColor)
+                this.polygons.push(new Polygon(x, y, this.radius, this.numSides, fillColor));
 
             }
         }
@@ -27,7 +27,7 @@ class PolygonGrid {
 
     display() {
         for (let polyInst of this.polygons) {
-            polyInst.display();
+            polyInst.draw();
         }
     }
 }
