@@ -1,4 +1,4 @@
-let polygon;
+// let polygon;
 
 
 function setup() {
@@ -14,8 +14,14 @@ function setup() {
   // polygonGrid.display();
   
   createCanvas(800, 800);
-  let polygonGrid = new PolygonGrid(10, 10, 40, 6);
-  polygonGrid.display();
+  background(0);
+  let polygonGrid1 = new PolygonGrid(10, 10, 40, 6);
+
+
+  polygonGrid1.display();
+
+
+  
 }
 
 function draw() {

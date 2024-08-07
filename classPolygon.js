@@ -18,15 +18,15 @@ class Polygon {
             let y = this.centerY + this.radius * sin(angle);
             vertices.push({ x: x, y: y });
         }
-    return vertices;
+        return vertices;
     }
     draw() {
         fill(this.fillColor);
         noStroke();
         beginShape();
-        this.vertices.forEach(tempVertex =>{
+        this.vertices.forEach(tempVertex => {
             vertex(tempVertex.x,tempVertex.y);
-        })
+        });
         endShape(CLOSE);
     }
 
