@@ -17,9 +17,14 @@ class PolygonGrid {
             for(let j = 0; j < this.cols; j++) {
                 let x = i * spacing + this.radius;
                 let y = j * spacing + this.radius; // this needs adjusting because hexagons are shorter than diameter
-                let fillColor = color(random(255),random(255),random(255));
+                let fillColor1 = color(random(255),random(255),random(255));
+                let fillColor2 = color(random(255),random(255),random(255));
+                let fillColor3 = color(random(255),random(255),random(255));
                 
-                this.polygons.push(new Polygon(x, y, this.radius, this.numSides, fillColor));
+                this.polygons.push(new Polygon(x, y, this.radius, this.numSides, fillColor1));
+                this.polygons.push(new Polygon(x, y, this.radius*.8, this.numSides, fillColor2));
+                this.polygons.push(new Polygon(x, y, this.radius*.6, this.numSides, fillColor3));
+                
 
             }
         }
