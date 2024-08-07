@@ -10,13 +10,20 @@ class PolygonGrid {
     }
 
     calcCenters() {
-        const spacing = this.radius * 2;
+        const spacingX = this.radius * 1.5;
+        const spacingY = this.radius * Math.sqrt(3); 
 
 
         for (let i = 0; i < this.rows; i++) {
             for(let j = 0; j < this.cols; j++) {
-                let x = i * spacing + this.radius;
-                let y = j * spacing + this.radius; // this needs adjusting because hexagons are shorter than diameter
+                let x = i * spacingX + this.radius;
+                let y = j * spacingY + this.radius;
+
+                if(i % 2 == 0) {
+                    // x += (spacingX/2);
+                    y += (spacingY/2);
+                }
+                
                 let fillColor1 = color(random(255),random(255),random(255));
                 let fillColor2 = color(random(255),random(255),random(255));
                 let fillColor3 = color(random(255),random(255),random(255));
