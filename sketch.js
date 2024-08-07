@@ -1,11 +1,19 @@
 let polygon;
 
+
 function setup() {
-  createCanvas(400, 400);
-  polygon = new Polygon(200, 200, 30, 6, "black");
+  const canvasWidth = 800;
+  const canvasHeight = 800;
+  
+  const rows = 10;
+  const cols = 10;
+  const radius = canvasWidth/(cols*2) //only for regular Polygons
+
+  createCanvas(canvasWidth, canvasHeight);
+  let polygonGrid = new PolygonGrid(rows, cols, radius, 6);
+  polygonGrid.display();
 }
 
 function draw() {
-  background("yellow");
-  polygon.draw();
+  noLoop();
 }

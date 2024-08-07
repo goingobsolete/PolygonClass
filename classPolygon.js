@@ -1,5 +1,5 @@
 class Polygon {
-    constructor(centerX, centerY, radius, numSides, fillColor) {
+    constructor(centerX, centerY, radius, numSides, fillColor = "black") {
         this.centerX = centerX;
         this.centerY = centerY;
         this.radius = radius;
