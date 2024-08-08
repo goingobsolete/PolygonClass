@@ -1,7 +1,7 @@
 class PolygonGrid {
-    constructor(rows, cols, radius, numSides) {
-        this.rows = rows;
-        this.cols = cols;
+    constructor(xTiles, yTiles, radius, numSides) {
+        this.xTiles = xTiles;
+        this.yTiles = yTiles;
         this.radius = radius;
         this.numSides = numSides;
         this.polygons = [];
@@ -14,8 +14,8 @@ class PolygonGrid {
         const spacingY = this.radius * Math.sqrt(3); 
 
 
-        for (let i = 0; i < this.rows; i++) {
-            for(let j = 0; j < this.cols; j++) {
+        for (let i = 0; i < this.xTiles; i++) {
+            for(let j = 0; j < this.yTiles; j++) {
                 let x = i * spacingX + this.radius;
                 let y = j * spacingY + this.radius;
 
