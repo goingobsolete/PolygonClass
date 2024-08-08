@@ -21,6 +21,8 @@ class Polygon {
         return vertices;
     }
     draw() {
+        push();
+        // translate(this.centerX,this.centerY,0,0);
         fill(this.fillColor);
         noStroke();
         beginShape();
@@ -28,6 +30,7 @@ class Polygon {
             vertex(tempVertex.x,tempVertex.y);
         });
         endShape(CLOSE);
+        pop();
     }
 
 }
