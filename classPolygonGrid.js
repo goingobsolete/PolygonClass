@@ -24,12 +24,12 @@ class PolygonGrid {
                     y += (spacingY/2);
                 }
                 
-                let fillColor1 = color(random(255),random(255),random(255));
-                let fillColor2 = color(random(255),random(255),random(255));
+                let fillColor1 = color(random(0),random(0),random(0));
+                let fillColor2 = color(random(255,255),random(255,255),random(255,255));
                 // let fillColor3 = color(random(200,255));
                 
                 this.polygons.push(new Polygon(x, y, this.radius, this.numSides, fillColor1));
-                this.polygons.push(new Polygon(x, y, this.radius*.8, this.numSides, fillColor2));
+                this.polygons.push(new Polygon(x, y, this.radius*.95, this.numSides, fillColor2));
                 // this.polygons.push(new Polygon(x, y, this.radius*.7, this.numSides, fillColor3));
                 
 
