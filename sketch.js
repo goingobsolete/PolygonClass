@@ -2,12 +2,19 @@
 function setup() {
 
   
-  createCanvas(800, 800);
-  background(0);
-  let polygonGrid1 = new PolygonGrid(13, 11, 40, 6);
+  createCanvas(windowWidth, windowHeight, P2D);
+  background(255);
+
+  let xTiles = 200;
+  let yTiles = 122;
+  let radius = 5;
+  let numSides = 6;
+  
+
+  let polygonGrid = new PolygonGrid(xTiles, yTiles, radius, numSides);
 
 
-  polygonGrid1.display();
+  polygonGrid.display();
 
 
   

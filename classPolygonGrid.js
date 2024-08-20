@@ -26,11 +26,11 @@ class PolygonGrid {
                 
                 let fillColor1 = color(random(255),random(255),random(255));
                 let fillColor2 = color(random(255),random(255),random(255));
-                let fillColor3 = color(255);
+                // let fillColor3 = color(random(200,255));
                 
                 this.polygons.push(new Polygon(x, y, this.radius, this.numSides, fillColor1));
                 this.polygons.push(new Polygon(x, y, this.radius*.8, this.numSides, fillColor2));
-                this.polygons.push(new Polygon(x, y, this.radius*.6, this.numSides, fillColor3));
+                // this.polygons.push(new Polygon(x, y, this.radius*.7, this.numSides, fillColor3));
                 
 
             }

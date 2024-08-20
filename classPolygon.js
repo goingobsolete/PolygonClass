@@ -14,15 +14,15 @@ class Polygon {
 
         for (let i = 0; i < this.numSides; i++) {
             let angle = i * angleStep;
-            let x = this.centerX + this.radius * cos(angle);
-            let y = this.centerY + this.radius * sin(angle);
-            vertices.push({ x: x, y: y });
+            let x = 0 + this.radius * cos(angle);
+            let y = 0 + this.radius * sin(angle);
+            vertices.push({ x: x, y: y});
         }
         return vertices;
     }
     draw() {
         push();
-        // translate(this.centerX,this.centerY,0,0);
+        translate(this.centerX,this.centerY);
         fill(this.fillColor);
         noStroke();
         beginShape();
@@ -30,6 +30,7 @@ class Polygon {
             vertex(tempVertex.x,tempVertex.y);
         });
         endShape(CLOSE);
+        
         pop();
     }
 
