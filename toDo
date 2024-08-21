@@ -1,6 +1,6 @@
 X.change rows and cols to xtile and ytile
 
-
+upload photo dom
 upolad a photo
 
 resize it no canvas
@@ -11,3 +11,8 @@ tile the photo into the polygon (or tile to the square of the pgraphic)
 then get the pixel 
 
 
+center the canvas
+
+DOM:
+uplaod image
+aspect ratio
