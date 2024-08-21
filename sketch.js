@@ -1,4 +1,11 @@
 
+// let bgimg;
+
+// function preload() {
+
+//   bgimg = loadImage("images/vulturineGuineaFowl.jpeg");
+
+// }
 
 
 
@@ -6,6 +13,7 @@ function setup() {
 
   
   createCanvas(windowWidth, windowHeight, P2D);
+
   background(255);
 
   // //Hard coded
@@ -30,6 +38,5 @@ function setup() {
 }
 
 function draw() {
-  imageMode(CENTER);
   noLoop();
 }

@@ -11,8 +11,10 @@ class Polygon {
     calcVertices() {
         let vertices = [];
         let angleStep = TAU / this.numSides;
+        // let offset = random(90);
 
         for (let i = 0; i < this.numSides; i++) {
+            // let angle = i * angleStep-offset;
             let angle = i * angleStep;
             let x = 0 + this.radius * cos(angle);
             let y = 0 + this.radius * sin(angle);

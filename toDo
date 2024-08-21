@@ -3,4 +3,11 @@ X.change rows and cols to xtile and ytile
 
 upolad a photo
 
-tile the photo into the polygon 
+resize it no canvas
+
+tile the photo into the polygon (or tile to the square of the pgraphic)
+
+
+then get the pixel 
+
+
